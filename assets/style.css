@@ -1,0 +1,29 @@
+:root {
+  /* Primary Color */
+  --pink: hsl(322, 100%, 66%);
+  /* neutral Color */
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+
+  /* Fonts */
+  --poppins-font: "Poppins", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
