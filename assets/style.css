@@ -94,7 +94,7 @@ nav {
   width: 75%;
   min-width: 200px;
   max-width: 280px;
-  padding: 8px;
+  padding: 10px;
   border-radius: 25px;
   border: none;
   color: white;
@@ -107,6 +107,47 @@ nav {
 .hero__imgContainer img {
   width: 100%;
   max-width: 460px;
+}
+.product__container {
+  margin-top: 60px;
+  width: 100%;
+}
+.product__card {
+  width: 85%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  margin: 0 auto 30px;
+  padding: 35px 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+}
+.product__imgContainer {
+  width: 100%;
+  text-align: center;
+}
+.product__imgContainer img {
+  width: 75%;
+  max-width: 260px;
+}
+.product__description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.product__title {
+  font-family: var(--poppins-font);
+  font-size: 2rem;
+  color: var(--very-dark-cyan);
+}
+.product__details {
+  padding-top: 12px;
+  font-family: var(--open-sans);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--grayish-blue);
 }
 img {
   width: 90%;
