@@ -36,9 +36,6 @@ nav {
   justify-content: space-between;
   margin: 25px auto 0;
 }
-main {
-  position: relative;
-}
 .logo-container {
   width: 35%;
 }
@@ -94,9 +91,9 @@ main {
   color: var(--very-dark-cyan);
 }
 .hero__btn {
-  width: 75%;
-  min-width: 200px;
-  max-width: 280px;
+  width: 220px;
+  /* min-width: 200px; */
+  /* max-width: 280px; */
   padding: 10px;
   border-radius: 25px;
   border: none;
@@ -114,6 +111,19 @@ main {
 .product__container {
   margin-top: 60px;
   width: 100%;
+
+  margin-bottom: 150px;
+}
+.conversations__card {
+  width: 85%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  margin: 0 auto 30px;
+  padding: 35px 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
 }
 .product__card {
   width: 85%;
@@ -152,27 +162,63 @@ main {
   line-height: 2rem;
   color: var(--grayish-blue);
 }
-.float-button {
-  width: 340px;
+
+/* ---------- FLOAT BUTTON ---------- */
+.float-card {
   position: absolute;
-  left: calc(50% - 170px);
+  z-index: 1;
+  width: 360px;
+  height: 150px;
+  margin: 0 auto;
+  left: calc(50% - 180px);
+  top: -75px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
   background-color: white;
   border-radius: 15px;
 }
 .float__title {
+  padding-bottom: 15px;
   display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
+.float__button {
+  width: 75%;
+  padding: 15px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  background-color: var(--pink);
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+
+/* ---------- FOOTER ----------- */
 footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 50px;
+  position: relative;
   background-color: var(--very-dark-cyan);
   font-weight: normal;
   font-family: var(--open-sans);
+  padding: 120px 20px 50px;
+}
+.contact-logo {
+  width: 95%;
+  margin: 0 auto;
+  /* max-width: 400px; */
+  padding-bottom: 20px;
+}
+.contact-logo img {
+  width: 45%;
+  max-width: 180px;
+  filter: brightness(0) invert(1);
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
 }
 .contact {
   width: 90%;
@@ -182,14 +228,7 @@ footer {
 
   color: white;
 }
-.contact__logo {
-  width: 100%;
-  padding-bottom: 20px;
-}
-.contact__logo img {
-  width: 45%;
-  filter: brightness(0) invert(1);
-}
+
 .contact__item {
   display: grid;
   grid-template-columns: 20px 1fr;

@@ -22,6 +22,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      media="(min-width: 1000px)"
+      rel="stylesheet"
+      href="/assets/tablet.css"
+    />
+
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
@@ -30,7 +36,7 @@
     <header>
       <nav>
         <figure class="logo-container">
-          <img src="/assets/images/logo.svg" alt="" />
+          <img src="/assets/images/logo.svg" alt="Huddle Logo" />
         </figure>
         <button class="nav__btn callToAction">Try It Free</button>
       </nav>
@@ -48,7 +54,7 @@
           <button class="hero__btn callToAction">Get Started For Free</button>
         </section>
         <figure class="hero__imgContainer">
-          <img src="/assets/images/illustration-mockups.svg" alt="" />
+          <img src="/assets/images/illustration-mockups.svg" alt="Hero image" />
         </figure>
       </section>
     </header>
@@ -64,10 +70,13 @@
             </p>
           </div>
           <figure class="product__imgContainer">
-            <img src="/assets/images/illustration-grow-together.svg" alt="" />
+            <img
+              src="/assets/images/illustration-grow-together.svg"
+              alt="Grow together image"
+            />
           </figure>
         </div>
-        <div class="product__card">
+        <div class="conversations__card">
           <div class="product__description">
             <h3 class="product__title">Flowing Conversations</h3>
             <p class="product__details">
@@ -79,7 +88,7 @@
           <figure class="product__imgContainer">
             <img
               src="/assets/images/illustration-flowing-conversation.svg"
-              alt=""
+              alt="Flowing conversations image"
             />
           </figure>
         </div>
@@ -93,78 +102,81 @@
             </p>
           </div>
           <figure class="product__imgContainer">
-            <img src="/assets/images/illustration-your-users.svg" alt="" />
+            <img
+              src="/assets/images/illustration-your-users.svg"
+              alt="Your user image"
+            />
           </figure>
         </div>
-      </section>
-
-      <section class="float-button">
-        <span class="float__title"> Ready To Build Your Community? </span>
-        <button class="float__btn callToAction">Get Started For Free</button>
       </section>
     </main>
 
     <footer>
-      <div class="contact">
-        <figure class="contact__logo">
-          <img src="/assets/images/logo.svg" alt="" />
-        </figure>
+      <section class="float-card">
+        <span class="float__title"> Ready To Build Your Community? </span>
+        <button class="float__button callToAction">Get Started For Free</button>
+      </section>
+      <figure class="contact-logo">
+        <img src="/assets/images/logo.svg" alt="" />
+      </figure>
+      <div class="footer__wrap">
+        <div class="contact">
+          <div class="contact__item location">
+            <img src="/assets/images/icon-location.svg" class="icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
 
-        <div class="contact__item location">
-          <img src="/assets/images/icon-location.svg" class="icon" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
+          <div class="contact__item telefon">
+            <img src="/assets/images/icon-phone.svg" class="icon" />
+            <p>+1-543-123-4567</p>
+          </div>
+
+          <div class="contact__item email">
+            <img src="/assets/images/icon-email.svg" class="icon" />
+            <p>example@huddle.com</p>
+          </div>
+        </div>
+        <div class="about">
+          <ul>
+            <li class="about__item"><a href="#">About Us</a></li>
+            <li class="about__item"><a href="#">What We Do</a></li>
+            <li class="about__item"><a href="#">FAQ</a></li>
+          </ul>
+          <ul>
+            <li class="about__item"><a href="#">Career</a></li>
+            <li class="about__item"><a href="#">Blog</a></li>
+            <li class="about__item"><a href="#">Contact Us</a></li>
+          </ul>
         </div>
 
-        <div class="contact__item telefon">
-          <img src="/assets/images/icon-phone.svg" class="icon" />
-          <p>+1-543-123-4567</p>
+        <div class="social-media">
+          <div class="social-media__icons">
+            <a href="">
+              <img
+                class="social__icon"
+                src="https://img.icons8.com/carbon-copy/50/000000/instagram-new.png"
+              />
+            </a>
+            <a href="">
+              <img
+                class="social__icon"
+                src="https://img.icons8.com/carbon-copy/50/000000/facebook.png"
+              />
+            </a>
+            <a href="">
+              <img
+                class="social__icon"
+                src="https://img.icons8.com/dotty/50/000000/twitter-squared.png"
+              />
+            </a>
+          </div>
+          <span class="copyRight">
+            &copy; Copyright 2018 Huddle. All rights reserved.
+          </span>
         </div>
-
-        <div class="contact__item email">
-          <img src="/assets/images/icon-email.svg" class="icon" />
-          <p>example@huddle.com</p>
-        </div>
-      </div>
-      <div class="about">
-        <ul>
-          <li class="about__item"><a href="#">About Us</a></li>
-          <li class="about__item"><a href="#">What We Do</a></li>
-          <li class="about__item"><a href="#">FAQ</a></li>
-        </ul>
-        <ul>
-          <li class="about__item"><a href="#">Career</a></li>
-          <li class="about__item"><a href="#">Blog</a></li>
-          <li class="about__item"><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <div class="social-media">
-        <div class="social-media__icons">
-          <a href="">
-            <img
-              class="social__icon"
-              src="https://img.icons8.com/carbon-copy/50/000000/instagram-new.png"
-            />
-          </a>
-          <a href="">
-            <img
-              class="social__icon"
-              src="https://img.icons8.com/carbon-copy/50/000000/facebook.png"
-            />
-          </a>
-          <a href="">
-            <img
-              class="social__icon"
-              src="https://img.icons8.com/dotty/50/000000/twitter-squared.png"
-            />
-          </a>
-        </div>
-        <span class="copyRight">
-          &copy; Copyright 2018 Huddle. All rights reserved.
-        </span>
       </div>
     </footer>
 
